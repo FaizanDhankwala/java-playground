@@ -1,13 +1,22 @@
 public class Main {
     public static void main(String[] args) {
-        Cat coco = new Cat("coco", 14);
-        Dog max = new Dog("max", 5, "Peng");
-        Rabbit rabbit = new Rabbit("snowball", 3, "black");
-        Toy robot = new Toy("curious George");
+        System.out.println("hello");
 
-        Action[] animals = new Action[]{coco, max, rabbit, robot};
-        for (Action friend : animals) {
-            friend.play();
+        Cat catone= new Cat("cold",14);
+        Dog dogone= new Dog("henry" , 14, "faiz");
+        Rabbit snowball= new Rabbit("snowball", 15, "blue");
+        Toy curiousgeorge= new Toy("your mama corporations");
+        Toy legotruck = new Toy("legotruck");
+
+
+
+        Action[] animals= new Action[]{catone, dogone, snowball, curiousgeorge};
+
+        for(Action freind: animals){
+            freind.play(legotruck);
         }
+
+
+
     }
 }
